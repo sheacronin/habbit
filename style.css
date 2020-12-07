@@ -1,0 +1,132 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-size: 16px;
+	background-color: #D9D2DB;
+	color: #161412;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+table {
+	border: none;
+	margin: 20px 0;
+	padding: 10px 5px 30px 0;
+	border-radius: 10px;
+	background-color: #E3DDE4;
+	box-shadow: 0 5px 10px #161412;
+}
+
+td {
+	border: solid 2px #BAABBD;
+	padding: 5px;
+}
+
+button {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	background-color: #161412;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	align-items: center;
+	border-radius: 10px;
+}
+
+input {
+	font-family: 'Poppins', sans-serif;
+}
+
+.habitCell {
+	height: 40px;
+	border: none;
+}
+
+.habitInput {
+	width: 120px;
+	height: 100%;
+	font-size: 16px;
+	text-align: center;
+	color: black;
+	background-color: #E3DDE4;
+	border: none;
+}
+
+.habitInput:disabled {
+	border: none;
+	font-weight: bold;
+}
+
+.dayCell {
+	width: 40px;
+	height: 40px;
+	background-color: none;
+
+	transition: box-shadow 0.5s;
+}
+
+.dayCell:hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 1px;
+}
+
+@keyframes insetShadow {
+	from {
+		box-shadow: 0;
+	}
+
+	50% {
+		box-shadow: inset 0 0 5px;
+	}
+
+	to {
+		box-shadow: 0;
+	}
+}
+
+.container {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#colorContainer {
+	width: 100px;
+	margin: 20px 0;
+	border-radius: 10px;
+	display: block;
+}
+
+.colorSelection {
+	position: relative;
+	top: 37px;
+	margin: 3px auto;
+	padding: 7px;
+	width: 40px;
+	height: 40px;
+	background-color: #E3DDE4;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px #161412;
+	display: block;
+}
+
+#editButton {
+	width: 90px;
+	display: block;
+	margin: 20px auto;
+}
+
+@keyframes submitFlash {
+	from {
+		background-color: #655C53;
+	} 50% {
+		background-color: #918578;
+	} to {
+		background-color: #655C53;
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Habbit</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Habbit.</h1>
+
+<div class="container">
+	<!-- Table of habits to track. Initally starts with 1 habit. -->
+	<table id="habits">
+		<tr>
+			<th></th>
+			<th>M</th>
+			<th>T</th>
+			<th>W</th>
+			<th>T</th>
+			<th>F</th>
+			<th>S</th>
+			<th>S</th>
+		</tr>
+	<!-- 	<tr>
+			<th class="habitCell">
+				<input class="habitInput" type="text" placeholder="Habit Name" id="habit1Name">
+			</th>
+			<td class="dayCell" onclick="pressCell(this, '#C9C9EE')"></td>
+			<td class="dayCell" onclick="pressCell(this, '#C9C9EE')"></td>
+			<td class="dayCell" onclick="pressCell(this, '#C9C9EE')"></td>
+			<td class="dayCell" onclick="pressCell(this, '#C9C9EE')"></td>
+			<td class="dayCell" onclick="pressCell(this, '#C9C9EE')"></td>
+			<td class="dayCell" onclick="pressCell(this, '#C9C9EE')"></td>
+			<td class="dayCell" onclick="pressCell(this, '#C9C9EE')"></td>
+		</tr> -->
+	</table>
+
+	<!-- Input elements to change each habit's color.-->
+	<div id="colorContainer">
+<!-- 		<input type="color" class="colorSelection" value="#C9C9EE" id="habit1Color"> -->
+	</div>
+</div>
+
+<!-- Buttons below the Habit Table to toggle Edit Mode and add a new habit. -->
+<button id="habitButton" onclick="addHabit()">Add Habit +</button>
+<button id="editButton" onclick="toggleEditMode()" style="animation: submitFlash 5s ease-in-out infinite">
+	Submit
+</button>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
